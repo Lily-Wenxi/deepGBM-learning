@@ -1,0 +1,43 @@
+I have installed Python 3.6 and lightGBM, 
+
+step3: install anaconda
+__________________________
+>>> curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+(install successful) Thank you for installing Miniconda3!
+
+step 4: install pytorch
+__________________________
+% conda install pytorch torchvision -c pytorch
+zsh: command not found: conda (failed)
+so, I try to install pytorch using pip3 
+% pip3 install torch torchvision
+    100% |████████████████████████████████| 4.0MB 6.8MB/s 
+Installing collected packages: torch, numpy, six, pillow, torchvision
+Successfully installed numpy-1.18.1 pillow-7.0.0 six-1.14.0 torch-1.4.0 torchvision-0.5.0
+
+but there are also some warning:You are using pip version 10.0.1, however version 20.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+
+sample code to verify istallation:
+from __future__ import print_function
+import torch
+x = torch.rand(5, 3)
+print(x)
+if successfully installed, the result should be:
+tensor([[0.3380, 0.3845, 0.3217],
+        [0.8337, 0.9050, 0.2650],
+        [0.2979, 0.7141, 0.9069],
+        [0.1449, 0.1132, 0.1375],
+        [0.4675, 0.3947, 0.1426]])
+
+step 5, install Sklearn
+__________________________
+
+using the following command:
+% pip3 install -U scikit-learn
+(output:)
+Installing collected packages: scipy, joblib, scikit-learn
+Successfully installed joblib-0.14.1 scikit-learn-0.22.2.post1 scipy-1.4.1
+You are using pip version 10.0.1, however version 20.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+
