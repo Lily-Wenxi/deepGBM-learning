@@ -1,0 +1,5 @@
+I have installed Python 3.6 and lightGBM, now when I try to install pytorch with conda, error happens as follows:
+(I install them on latest mac os version)
+
+>>> conda install pytorch torchvision -c pytorch
+ERROR: Cannot install into directories with spaces
