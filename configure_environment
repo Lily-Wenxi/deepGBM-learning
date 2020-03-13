@@ -41,3 +41,25 @@ Successfully installed joblib-0.14.1 scikit-learn-0.22.2.post1 scipy-1.4.1
 You are using pip version 10.0.1, however version 20.0.2 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 
+
+step6: install pandas
+pip3 install pandas
+    100% |████████████████████████████████| 512kB 5.7MB/s 
+Requirement already satisfied: six>=1.5 in /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages (from python-dateutil>=2.6.1->pandas) (1.14.0)
+Installing collected packages: python-dateutil, pytz, pandas
+Successfully installed pandas-1.0.1 python-dateutil-2.8.1 pytz-2019.3
+
+step 6: clone deepGBM code package
+git clone git@github.com:motefly/DeepGBM.git
+
+step 7: install module category_encoders (if errors happen:ModuleNotFoundError: No module named 'category_encoders')
+pip3 install --upgrade category_encoders
+
+step 8: install module tqdm (if errors happen : ModuleNotFoundError: No module named 'category_encoders')
+pip3 install --upgrade tqdm
+
+
+
+
+
+
